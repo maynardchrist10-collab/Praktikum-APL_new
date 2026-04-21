@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// ================= STRUCT =================
+
 struct User{
     string nama;
     string nim;
@@ -15,7 +15,7 @@ struct CuciMotor{
     int harga;
 };
 
-// ================= LOGIN =================
+
 void login(User *user, int *kesempatan){
 
     string username, password;
@@ -43,7 +43,7 @@ void login(User *user, int *kesempatan){
     }
 }
 
-// ================= TAMBAH DATA =================
+
 void tambahData(CuciMotor *pelanggan, int *jumlah){
 
     cin.ignore();
@@ -94,7 +94,7 @@ void tambahData(CuciMotor *pelanggan, int *jumlah){
     (*jumlah)++;
 }
 
-// ================= LIHAT DATA =================
+
 void lihatData(CuciMotor *pelanggan, int jumlah){
 
     if(jumlah == 0){
@@ -111,7 +111,7 @@ void lihatData(CuciMotor *pelanggan, int jumlah){
     }
 }
 
-// ================= UBAH DATA =================
+
 void ubahData(CuciMotor *pelanggan, int jumlah){
 
     if(jumlah == 0){
@@ -171,7 +171,7 @@ void ubahData(CuciMotor *pelanggan, int jumlah){
     }
 }
 
-// ================= HAPUS DATA =================
+
 void hapusData(CuciMotor *pelanggan, int *jumlah){
 
     if(*jumlah == 0){
@@ -206,7 +206,7 @@ int hitungTotal(CuciMotor *pelanggan, int jumlah){
     return total;
 }
 
-// ================= SORTING =================
+
 
 // Huruf Descending (Nama)
 void sortNamaDesc(CuciMotor *pelanggan, int jumlah){
@@ -243,7 +243,7 @@ void sortPlatAsc(CuciMotor *pelanggan, int jumlah){
     }
 }
 
-// ================= MAIN =================
+
 int main(){
 
     User user = {"maynard","114"};
